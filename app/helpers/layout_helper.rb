@@ -39,6 +39,13 @@ module LayoutHelper
     link_to name, path, :class => style
   end
   
+  def vmenu_link_to(name,path)
+      style = current_page?(path) ? \
+                "vmenu_current" : \
+                "vmenu"
+      link_to name, path, :class => style
+  end
+  
   # Outputs a Javascript to place the title of a page at the URL in cases 
   # where the page was addressed by it's ID
   def set_browser_address(page,title)

@@ -4,10 +4,24 @@
 <div>
   <% if (p=Page.top_pages).any? %>
     <div class='right_column'>
-      <% for page in p %>
-        <%= render :partial => '/pages/page_intro', :locals => { :page => page } %>  
-        <p class='content_seperator'></p>
-      <% end %>
+      	<div id="menu_download">
+      		<img src="/images/site/login_disabled.png">
+      	</div>
+      	<div style="margin-top:12px;" id="menu_followus">
+      		<img onclick="window.location.href=''" src="/images/site/menu_followus.png"><br><br>
+      		<div style="margin-left:15px;">
+      		<img onclick="window.location.href=''" src="/images/site/index_30.gif">
+      		<img onclick="window.location.href=''" src="/images/site/index_32.gif">
+      		<img onclick="window.location.href=''" src="/images/site/index_34.gif">
+      		<img onclick="window.location.href=''" src="/images/site/index_36.gif">
+      		</div>
+      	</div>
+      	<div>
+	      <% for page in p %>
+		<%= render :partial => '/pages/page_intro', :locals => { :page => page } %>  
+		<p class='content_seperator'></p>
+	      <% end %>
+	</div>
     </div>
   <% end %>
   
@@ -16,7 +30,8 @@
     
     <div id='postings' class='left_column'>
       <%= link_to( t(:create_new_posting), new_blog_posting_path(@blog), :class => 'green_button') if can? :create, Posting %>
-    
+      <img src="/images/sample.jpg">
+      <img src="/images/site/index_46.png">
       <p><%= will_paginate @postings %></p>
     
       <% for posting in @postings %>

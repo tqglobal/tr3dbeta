@@ -64,7 +64,7 @@
         color-stop(0.0, #000)
     ) repeat-x;
     /*background: #000 -moz-linear-gradient(0% 100% 90deg, #677083, #EAECEE);*/
-    color: #333;
+    color: #fff;
     font-size: 1.0em;
   }    
     
@@ -76,9 +76,9 @@
   }
   
   a {
-    color: #46506F;
+    color: #fff;
     text-decoration: none;
-    border-bottom: 1px dotted #46506F;
+    /*border-bottom: 1px dotted #46506F;*/
   }
     
   a:hover {
@@ -174,19 +174,19 @@
     border: 0px;
   }
     
-  
+      
   #container {
     width: 943px;
     margin: auto;
-    background: #FFF;
+    background: #000;
     padding: 20px 20px;
     padding-top: 0px;
     border: none;
-    border-left: 1px solid #ccc;
+    /*border-left: 1px solid #ccc;
     border-top: 1px solid #ccc;
     box-shadow: 3px 3px 3px 3px #222;
     -webkit-box-shadow: 3px 3px 3px #222;
-    -moz-box-shadow: 3px 3px 3px #222;
+    -moz-box-shadow: 3px 3px 3px #222;*/
     -moz-border-radius: 5px 5px 5px 5px; 
     -webkit-border-radius: 5px 5px 5px 5px; 
   }
@@ -257,10 +257,11 @@
     margin: 0;
   }
   
+  
   #session {
     /*position: fixed;*/
     z-index: 3;
-    top: 50px;
+    top: 90px;
     /*left: 0px;
     right: 0px;*/
     padding: 5px;
@@ -275,6 +276,7 @@
     background: #677083 -moz-linear-gradient(0% 100% 90deg, #677083, #EAECEE);color: #444;*/
     margin-top: 0px;
     padding-top: 10px;
+    padding-bottom: 20px;
     margin: 0 auto;
     width: 943px;
   }
@@ -287,7 +289,7 @@
   .hmenu {
     z-index: 3;
     font-size: 0.9em;
-    color: #444;
+    color: #fff;
     margin: 0px;
   }
   
@@ -295,7 +297,7 @@
      z-index: 3;
     font-size: 0.9em; 
     text-decoration: none;
-    color: #444;
+    color: #fff;
     padding: 5px;
     padding: 5px;
     border-bottom :none;
@@ -359,63 +361,55 @@
       padding-right: 0px;
   }
   
+      
+  #main_menu {
+    background: url("/images/site/transparent_bg.png") repeat-y;
+    top: 0;
+    padding-top:16px;
+  }
   
   .vmenu {
     z-index: 3;
     font-size: 0.9em;
-    color: #444;
+    color: #fff;
     margin: 0px;
+    background: url("/images/site/menu_btn.png") no-repeat;
+    display: block;
+    height: 30px;
   }
     
   #main_menu .vmenu a {
-     z-index: 3;
-    font-size: 0.9em; 
+    z-index: 3;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style:italic;
     text-decoration: none;
-    color: #444;
-    padding: 5px;
-    padding: 5px;
-    border-bottom :none;
-    -moz-border-radius: 3px 3px 0px 0px; 
-    -webkit-border-radius: 3px 3px 0px 0px;     
+    text-transform: uppercase;
+    line-height:30px;
+    color: #fff;
+    padding-left:20px;
   }
-    
+      
   .vmenu_current {
-    background: #677083;
-    background: #677083 -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.95,  #677083),
-        color-stop(0.0, #EAECEE)
-    ) repeat-x;
-    background: #677083 -moz-linear-gradient(0% 100% 90deg, #677083, #EAECEE);
-    color: black;
+    background: url("/images/site/menu_m-over_btn.png") no-repeat;
+    color: white;
     font-size: 0.9em;
-    -moz-border-radius: 3px; 
-    -webkit-border-radius: 3px;
-    -moz-box-shadow: 5px 0px 2px #888;
-    -webkit-box-shadow:  2px -2px 3px #000;
-    box-shadow: 0px 0px 0px #888;
-    border-bottom: 0px;
+    width: 195px;
+    display: block;
+    height: 30px;
   }
     
-  #main_menu .vmenu .vmenu_current {
-    border: 1px solid #888;    
+  #main_menu .vmenu .vmenu_current {   
     border-bottom :none;
   }
     
   .vmenu a:hover {
-    background: #CBE1E1;
-    color: black;
-    background: #677083;
-    background: #677083 -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.95,  #677083),
-        color-stop(0.0, #EAECEE)
-    ) repeat-x;
-    background: #677083 -moz-linear-gradient(0% 100% 90deg, #677083, #EAECEE);
+    background: url("/images/site/menu_m-over_btn.png") no-repeat;
+    color: white;
+    width: 195px;
+    display: block;
+    height: 30px;
   }
     
   ul.vmenu {
@@ -423,16 +417,16 @@
     display: block;
     margin: 0px;
     padding: 0px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
     
   ul.vmenu li {
       display: block;
       margin: 0px;
-      padding: 5px;
       padding-left: 0px;
       padding-right: 0px;
+      width: 195px;
   }
   
   
@@ -493,11 +487,11 @@
   }
   
   #container img {
-    -moz-border-radius: 5px 5px 5px 5px; 
+    /*-moz-border-radius: 5px 5px 5px 5px; 
     -webkit-border-radius: 5px 5px 5px 5px; 
     -moz-box-shadow: 5px 5px 3px #888;
     -webkit-box-shadow: 5px 5px 3px #888;
-    box-shadow: 5px 5px 3px #888;
+    box-shadow: 5px 5px 3px #888;*/
     border: none;
     padding: 0px;
   }
@@ -821,27 +815,30 @@
   }
   
   
+  
   #container .right_column {
-    width: 195px;
+    width: 180px;
     float: right;
-    border: 1px solid #ddd;
+    padding: 0px;
+    padding-left:10px;
+    padding-right:10px;
+    /*border: 1px solid #ddd;
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px;
-    padding: 10px;
     background: #ddd;
     -webkit-box-shadow: 4px 4px 4px #444;
-    -moz-box-shadow: 4px 4px 4px #444;
+    -moz-box-shadow: 4px 4px 4px #444;*/
     
   }
   
-  #container .left_column {
-    width: 200px;
-    float: left;
+  #menu_followus {
+    background-color: #000;
+    color: #fff;
   }
   
-  #container .mid_column {
-    width: 533px;
+  #container .left_column {
     float: left;
+    width: 533px;
   }
   
   #container .right_column .page_intro h1 {
@@ -899,7 +896,7 @@
     
   #container #postings h2 {
     margin: 0px;
-    text-shadow: 2px 1px 2px #888;
+    /*text-shadow: 2px 1px 2px #888;*/
     margin-top: 15px;
     font-size: 1.5em;
     
@@ -922,7 +919,7 @@
   }
   
   #container #postings h2 a {
-    color: #383838;
+    color: #fff;
     text-decoration: none;
     border: none;
   }
@@ -1167,11 +1164,11 @@
   #container img {
     border: none;
     padding: 0px;
-    -moz-border-radius: 5px 5px 5px 5px; 
+    /*-moz-border-radius: 5px 5px 5px 5px; 
     -webkit-border-radius: 5px 5px 5px 5px; 
     -moz-box-shadow: 5px 5px 3px #888;
     -webkit-box-shadow: 5px 5px 3px #888;
-    box-shadow: 5px 5px 3px #888;
+    box-shadow: 5px 5px 3px #888;*/
   }
   
 }
