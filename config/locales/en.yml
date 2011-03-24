@@ -159,3 +159,15 @@ en:
     zero: 'Comment successfully created'
     one: 'Comment successfully created. You can edit it for one minute'
     other: 'Comment successfully created. You can edit it for the next %{count} minutes'
+  allow_comments: 'Allow comments'
+  allow_public_comments: 'Allow public comments'
+  hide: hide
+  notification_successfully_hidden: 'Notification hidden. Visit <a href=/notifications>notifications</a> to show hidden notifications again'
+  notification_successfully_shown: 'Notification not hidden anymore.'
+  user_notifications: System notifications
+  show_again: display again
+  notifications: 'Notifications'
+  you_have_count_notifications:
+    zero: 'Currently there are no hidden/old user notifications for you.'
+    one: 'There is one hidden/old user notification for you.'
+    other: 'You have stored %{count} hidden/old user notifications.'

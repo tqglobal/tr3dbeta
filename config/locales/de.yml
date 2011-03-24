@@ -349,3 +349,15 @@ de:
     zero: 'Kommentar wurde gespeichert'
     one: 'Kommentar wurde gespeichert und kann noch 1 Minute bearbeitet werden.'
     other: 'Kommentar wurde gespeichert und kann noch %{count} Minuten bearbeitet werden.'
+  allow_comments: Kommentare erlauben
+  allow_public_comments: Anonyme Kommentare erlauben
+  hide: 'Verbergen'
+  notification_successfully_hidden: 'Die Nachricht wird nun verborgen. Unter <a href=/notifications>Benachrichtigungen</a> werden alle Nachrichten angezeigt.'
+  user_notifications: 'Systemnachrichten'
+  notification_successfully_shown: 'Die Nachricht wird wieder angezeigt'
+  show_again: 'Wieder anzeigen'
+  notifications: Nachrichten
+  you_have_count_notifications:
+    zero: 'Es sind keine alten Systemnachrichten für sie gespeichert.'
+    one: 'Sie haben eine verteckte/alte Systemnachricht.'
+    other: 'Es sind %{count} versteckte/alte Systemnachrichten für sie gespeichert.'
