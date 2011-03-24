@@ -19,21 +19,21 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <% setup_action_buttons %>
-    <% if content_for? :action_buttons %>
-      <div id='action_buttons'>
-          <%= yield(:action_buttons) %>
-      </div>
-    <% end %>
+    
     <div id='overlay' class="ui-widget-content"></div>
     <div id="banner">
+      <div id="banner_title"><img src="/images/site/tr3d_header.png"></div>
       <%= render :partial => '/layouts/banner' %>
+      <% setup_action_buttons %>
+          <% if content_for? :action_buttons %>
+            <div id='action_buttons'>
+                <%= yield(:action_buttons) %>
+            </div>
+      <% end %>
+      <div id="banner_logo"><img src="/images/site/tqglobal_logo.png">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/site/starhub_logo.png"></div>
     </div>
     
     <div id="session">
-        <ul class="hmenu">
-          <%= render 'home/menu/application' %>
-        </ul>
         <ul class="hmenu" style='float: right;'>
           <%= render 'devise/menu/registration_items' %>
           <%= render 'devise/menu/login_items' %>
@@ -43,9 +43,9 @@
     
     <div id="container">
         
-      <div class='google-search'>
+      <!--div class='google-search'>
           <%= insert_google_site_search %>
-      </div>
+      </div-->
       
       <div>
         <% flash.each do |name, msg| %>
@@ -53,12 +53,21 @@
         <% end %>
       </div>    
       
-      <div style="margin: 0px;">
-         <div id="cse" style="display: hidden; background: #fee;"></div>
-        <%= content_tag(:h1,:id => 'title') do yield(:title) end if show_title? %>
-        <%= yield %>
-      </div>
-      
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 0;">
+      <tr><td width="200">
+	      <div id="main_menu">
+		<ul class="vmenu">
+		  <%= render 'home/menu/application' %>
+		</ul>
+	      </div>
+      </td><td width="728">
+	      <div style="margin: 0px;">
+		 <div id="cse" style="display: hidden; background: #fee;"></div>
+		<%= content_tag(:h1,:id => 'title') do yield(:title) end if show_title? %>
+		<%= yield %>
+	      </div>
+      </td></tr>
+      </table>
       <div id='clear'></div>
     
     </div>

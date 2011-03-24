@@ -15,7 +15,7 @@ Cba::Application.configure do
   config.action_controller.perform_caching = false
 
   ### ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # A dummy setup for development - no deliveries, but logged
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true

@@ -12,4 +12,4 @@ ActionMailer::Base.smtp_settings = {
 }
 
 ActionMailer::Base.default_url_options[:host] = DEFAULT_URL
-Mail.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
+#Mail.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
